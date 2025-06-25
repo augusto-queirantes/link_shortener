@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails link shortener project
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+- Docker
 
-* System dependencies
+## Setup
 
-* Configuration
+To setup the application just runs a `docker compose up -d`
 
-* Database creation
+## Useful commands
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`docker exec -it app bash` -> To execute a bash inside the application docker container
+`rails s -b 0.0.0.0` -> To execute the server and expose it outside of the container
+`rubocop` -> To execute the linter
+`rspec` -> To execute the tests

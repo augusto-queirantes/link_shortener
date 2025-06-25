@@ -1,6 +1,6 @@
 # README
 
-Rails link shortener project
+Rails link shortener
 
 ## Requirements
 

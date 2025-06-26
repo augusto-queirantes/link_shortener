@@ -17,3 +17,7 @@ group :development, :test do
   gem "rspec-rails", "~> 8.0.1"
   gem "pry", "~> 0.15.2"
 end
+
+group :development do
+  gem "rubocop-rails", "~> 2.32.0", require: false
+end

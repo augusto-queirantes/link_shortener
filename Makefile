@@ -1,6 +1,18 @@
 .PHONY: setup
 setup: copy-env install create-db migrate-db
 
+.PHONY: server
+server:
+	rails s -b 0.0.0.0
+
+.PHONY: lint
+rubocop:
+	rubocop
+
+.PHONY: test
+test:
+	rspec
+
 .PHONY: install
 install:
 	bundle install

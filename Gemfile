@@ -21,3 +21,7 @@ end
 group :development do
   gem "rubocop-rails", "~> 2.32.0", require: false
 end
+
+group :test do
+  gem "shoulda-matchers", "~> 6.5.0"
+end
